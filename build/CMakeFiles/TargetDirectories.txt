@@ -1,0 +1,3 @@
+/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/build/CMakeFiles/intro_lab.dir
+/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/build/CMakeFiles/edit_cache.dir
+/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/build/CMakeFiles/rebuild_cache.dir
