@@ -17,8 +17,7 @@ void Bag::firstToken() const {
 
 void Bag::allTokens() const {
     for (const auto& token : contents) {
-        // TODO: print out the currently chosen Token
-        
+        std::cout << token.toString() << std::endl;
     }
 }
 
@@ -26,24 +25,40 @@ void Bag::allTokensWhile() const {
     size_t i = 0;
     // TODO: turn this into a while loop that enumerates and
     // prints all of the tokens in the bag
-    while () {
-        
+    while (i < contents.size()) {
+        std::cout << contents[i].toString() << std::endl;
+        ++i;
     }
 }
 
 int Bag::addTokens() const {
     // TODO: write a loop that enumerates the entire bag
 	// and sums the total of all of the Token values
-    return 0;
+    int sum {0};
+    for (size_t i{0}; i < contents.size(); ++i) {
+            sum += contents[i].getValue();
+    }
+    return sum;
 }
 
 int Bag::highValueTokens() const {
     // TODO: write a loop that enumerates the entire bag
     // and returns the number of high value Tokens
-    return 0;	
+    int sum {0};
+    for (size_t i{0}; i < contents.size(); ++i) {
+        if (contents[i].isHighValue()) {
+            sum += contents[i].getValue();
+        }
+    }
+    return sum;
 }
 
 int Bag::firstGreen() const {
     // TODO: search bag for a green Token, if found, return its index
+    for (size_t i{0}; i < contents.size(); ++i) {
+        if (contents[i].getColor() == std::string("Green)")) {
+            return i;
+        }
+    }	
     return -1;
 }
