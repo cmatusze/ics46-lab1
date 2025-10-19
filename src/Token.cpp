@@ -28,21 +28,20 @@ Token::Token() {
     value = value_dist(engine);
 }
 
-
 std::string Token::getColor() const {
     return color;
 }
 
 int Token::getValue() const {
-    // TODO: Have this function return the value of this Token
+    return this->value;
 }
 
 void Token::setColor(const std::string& color) {
-    // TODO: Have this function change the color of this Token
+    this->color = color;
 }
 
 void Token::setValue(int value) {
-    // TODO: Have this function change the value of this Token
+    this->value = value;
 }
 
 bool Token::isMax() const {
@@ -50,11 +49,10 @@ bool Token::isMax() const {
 }
 
 bool Token::isHighValue() const {
-    // TODO write this function so that it returns true if the value is greater than half the maximum value
-
+    return (value > (MAX_VALUE/2));
 }
 
 std::string Token::toString() const {
     // TODO: Complete this line of code so that it will also print the value of the token
-	return std::string("Token's color is ") + color + " and has value ";
+	return std::string("Token's color is ") + color + std::string(" and has value ") + std::to_string(value);
 }

@@ -5,7 +5,7 @@
  * A Bag is a collection of Tokens (chips) that supports
  * functions that work by enumerating the contents.
  *
- * @author: YOUR NAME HERE
+ * @author: Caden Matuszewicz
  */
 
 Bag::Bag(int numTokens) : contents(numTokens) {}
