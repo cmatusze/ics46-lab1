@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/intro_lab.dir/src/Token.cpp.o.d"
   "CMakeFiles/intro_lab.dir/src/main.cpp.o"
   "CMakeFiles/intro_lab.dir/src/main.cpp.o.d"
-  "intro_lab"
-  "intro_lab.pdb"
+  "bin/intro_lab"
+  "bin/intro_lab.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

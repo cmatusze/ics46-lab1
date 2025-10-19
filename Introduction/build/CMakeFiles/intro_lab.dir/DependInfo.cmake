@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/src/Bag.cpp" "CMakeFiles/intro_lab.dir/src/Bag.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/Bag.cpp.o.d"
-  "/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/src/Token.cpp" "CMakeFiles/intro_lab.dir/src/Token.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/Token.cpp.o.d"
-  "/Users/tyya2021/Desktop/ICS46_F25/Introduction_Lab_cpp/src/main.cpp" "CMakeFiles/intro_lab.dir/src/main.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/main.cpp.o.d"
+  "/home/cmatusze/ICS46/ics46-lab1/Introduction/src/Bag.cpp" "CMakeFiles/intro_lab.dir/src/Bag.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/Bag.cpp.o.d"
+  "/home/cmatusze/ICS46/ics46-lab1/Introduction/src/Token.cpp" "CMakeFiles/intro_lab.dir/src/Token.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/Token.cpp.o.d"
+  "/home/cmatusze/ICS46/ics46-lab1/Introduction/src/main.cpp" "CMakeFiles/intro_lab.dir/src/main.cpp.o" "gcc" "CMakeFiles/intro_lab.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

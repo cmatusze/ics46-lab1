@@ -14,10 +14,11 @@ foreach(OUTPUT_CONFIG Debug Release RelWithDebInfo MinSizeRel)
     set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_${OUTPUT_CONFIG} ${CMAKE_BINARY_DIR}/lib/${OUTPUT_CONFIG})
 endforeach()
 
+# --- Main executable ---
 add_executable(intro_lab
-    src/main.cpp
-    src/Bag.cpp
-    src/Token.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Bag.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Token.cpp
 )
 
 target_include_directories(intro_lab PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -25,11 +26,11 @@ target_include_directories(intro_lab PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
 # --- GoogleTest target ---
 # We assume GoogleTest is available in the build environment (via system install or toolchain).
 # This project layout provides a gtest main at gtest/gtestmain.cpp and test files in gtest/.
-file(GLOB GTEST_SOURCES CONFIGURE_DEPENDS gtest/*.cpp)
+file(GLOB GTEST_SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/gtest/*.cpp)
 
 add_executable(intro_lab_tests
-    src/Bag.cpp
-    src/Token.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Bag.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Token.cpp
     ${GTEST_SOURCES}
 )
 
